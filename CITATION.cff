@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you reference the Blitter Disk II Adapter project, please credit Darren Crawford (Viper)."
+title: "Blitter Disk II Adapter"
+type: software
+authors:
+  - family-names: Crawford
+    given-names: Darren
+version: "Rev B Prototype"
+date-released: 2026-09-20
+abstract: "Prototype USB interface project for connecting an original Apple Disk II drive to modern Windows and Linux computers, with the long-term goal of live DOS 3.3 and ProDOS filesystem mounting."

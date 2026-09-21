@@ -1,0 +1,25 @@
+Ref,Part,Specification / Notes,Qty
+U3,Raspberry Pi Pico 2 with headers,RP2350 module; official 40-pin Pico format,1
+"U4,U5",SN74AHCT125N,PDIP-14 quad 3-state buffer; 5V powered; TTL-compatible inputs,2
+U6,SN74LVC245AN,PDIP-20 octal transceiver; 3.3V powered; inputs accept 5.5V,1
+Q1,2N3904,NPN transistor; verify E/B/C pinout for your manufacturer,1
+J1,5.5x2.1mm DC jack or screw terminal,12V input,1
+J2,2x10 0.1-inch shrouded/keyed IDC header,Original Disk II cable connector,1
+SW1,SPDT ON-ON toggle switch,Physical SAFE / WRITE selector,1
+F1,2A fuse or resettable PTC,Protect +12V input,1
+D1,1.5KE15A TVS diode (recommended),"Cathode/banded end to +12V, anode to GND",1
+U7,5V buck converter module,12V input; adjustable/reg 5.0V; >=2A,1
+U8,Regulated isolated 12V-to-12V DC/DC module,2W minimum; creates -12V rail,1
+R1-R7,100 ohm 1/4W,Series resistors on seven drive-output signal lines,7
+"R8,R9",1K 1/4W,RDDATA and WRPROT input series resistors,2
+R10,4.7K 1/4W,GP11 to Q1 base,1
+R11,100K 1/4W,Q1 base pulldown,1
+R12,10K 1/4W,OE_N pullup to +5V,1
+R13,1K 1/4W,+5V to SAFE throw of SW1,1
+"C1,C2,C3",0.1uF ceramic,One directly across each logic IC supply,3
+C4,220uF 25V electrolytic,+12V bulk capacitor near J2,1
+C5,470uF 10V electrolytic,+5V bulk capacitor near J2,1
+C6,22uF 25V electrolytic,-12V bulk; positive lead to GND,1
+C7-C9,0.1uF ceramic,One on each J2 power rail,3
+BOARD,Perfboard or custom PCB,Do not use solderless breadboard for final drive-power wiring,1
+PSU,12V regulated wall adapter,"2A minimum, center-positive if using barrel jack",1

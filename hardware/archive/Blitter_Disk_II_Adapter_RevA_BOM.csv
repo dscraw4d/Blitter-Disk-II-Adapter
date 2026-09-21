@@ -1,0 +1,16 @@
+Reference,Part,Specification / Notes,Quantity
+U3,Raspberry Pi Pico 2,RP2350 module,1
+"U4,U5",74HCT125,Quad 5V HCT buffer,2
+U6,SN74LVC245A,"5V-tolerant input buffer, 3.3V",1
+U1,5V buck converter,"12V in, 5.0V out, >=2A",1
+U2,Isolated DC/DC,"12V in / 12V out, >=2W",1
+J1,DC jack,5.5x2.1mm center-positive,1
+J2,2x10 IDC header,"0.1in, keyed/shrouded",1
+F1,Resettable PTC,~1.5A hold,1
+D1,TVS diode,~15V standoff,1
+R1-R7,100 ohm,Series resistors on outputs,7
+"R8,R9",10K,"Pull-ups on /ENABLE, /WRREQ",2
+R10,10K,SAFE_EN pull-down,1
+"C1,C2",100uF,Bulk decoupling,2
+C3+,100nF,Logic/rail decoupling,6+
+SW1,SPST switch,Physical write-enable interlock,1
